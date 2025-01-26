@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d3f8e2;
+    font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.creature {
+    position: absolute;
+    width: 50px;  /* Size for images */
+    height: 50px; /* Size for images */
+    background-color: transparent;  /* Removed the red background */
+    border-radius: 50%;  /* Keep the rounded edges */
+}
+
+/* Updated styles for the frog */
+#frog {
+    background-color: transparent;  /* Removed background color */
+    background-image: url('frog.png');  /* Replaced with the frog PNG */
+    background-size: cover;  /* Make the image cover the whole area */
+}
+
+/* Updated styles for the fish */
+#fish {
+    background-color: transparent;  /* Removed background color */
+    background-image: url('fish.png');  /* Replaced with the fish PNG */
+    background-size: cover;  /* Make the image cover the whole area */
+}
+
+/* Updated styles for the net */
+#net {
+    position: absolute;
+    bottom: 20px;
+    width: 80px;  /* Adjusted for net image size */
+    height: 80px; /* Adjusted for net image size */
+    background-color: transparent;  /* Removed background color */
+    background-image: url('net.png');  /* Replaced with the net PNG */
+    background-size: cover;  /* Make the image cover the whole area */
+    cursor: pointer;
+    pointer-events: none;  /* Ensures the net doesn't get clicked directly */
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #333;
+}
